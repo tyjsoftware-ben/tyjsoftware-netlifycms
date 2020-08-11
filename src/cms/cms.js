@@ -16,4 +16,5 @@ CMS.registerPreviewTemplate('products', ProductPagePreview)
 CMS.registerPreviewTemplate('blog', BlogPostPreview)
 
 // Custom widgets
-CMS.registerWidget()
+import {TeamMembersControl, TeamMembersPreview} from '../../static/admin/widgets/TeamMembers';
+CMS.registerWidget("TeamMember", TeamMembersControl, TeamMembersPreview)
