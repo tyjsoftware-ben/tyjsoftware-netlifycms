@@ -12,6 +12,18 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: "team_member"
+    label: "Team Member"
+    folder: "src/team/member"
+    create: true
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "show", default: "team-member"}
+      - {label: "First Name", name: "name_first", widget: "string"}
+      - {label: "Last Name", name: "name_last", widget: "string"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Head Shot", name: "pic_head", widget: "image"}
+      - {label: "Biography", name: "bio", widget: "string"}
+      - {label: "embeds", name: "embeds", widget: "text"}
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
